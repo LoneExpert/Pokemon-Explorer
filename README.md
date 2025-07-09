@@ -52,7 +52,7 @@ src/
 ### 📦 Clone & Install
 
 ```bash
-git clone https://github.com/YourUsername/pokemon-explorer.git
+git clone https://github.com/LoneExpert/pokemon-explorer.git
 cd pokemon-explorer
 npm install
 npm run dev
