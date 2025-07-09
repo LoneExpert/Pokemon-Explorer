@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧭 Pokémon Explorer
 
-## Getting Started
+Welcome to **Pokémon Explorer** – a sleek, responsive web app built with **Next.js** and styled using **Tailwind CSS**. This project allows users to browse, search, and view detailed information about their favorite Pokémons using data from the **PokeAPI**.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- 🔍 **Search & Explore:** Browse through a list of Pokémons and filter by name using a live search bar.
+- 📄 **Detailed View:** Click any Pokémon card to view its image, abilities, types, base stats, and moves.
+- 🌐 **Dynamic Routing:** Uses Next.js dynamic routes (`/pokemon/[id]`) to navigate to each Pokémon’s page.
+- ⚡ **Performance Optimized:** Built with **Static Site Generation (SSG)** for lightning-fast performance.
+- 💅 **Responsive UI:** Clean and modern UI that adapts beautifully to desktop and mobile devices.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Styling:** Tailwind CSS
+- **API:** [PokeAPI](https://pokeapi.co)
+- **Hosting:** GitHub Pages
+
+---
+
+## 📁 Project Structure
+
+├── public/
+│   └── Screenshot_1.png         // Screenshot for README
+│   └── Screenshot_2.png         // Screenshot for README
+│   └── Screenshot_3.png         // Screenshot for README
+│   └── pokemon.png              // App icon
+src/
+├── app/
+│   ├── page.jsx               // Homepage with search + Pokémon list
+│   └── pokemon/
+│       └── [id]/page.jsx      // Pokémon detail page
+├── Components/
+│   └── PokemonCard.jsx        // Reusable card component
+
+---
+
+## 📸 Screenshot
+
+![Pokemon Explorer HomePage Screenshot](./public/Screenshot_1.png)
+![Pokemon Explorer PokemonCard Screenshot](./public/Screenshot_2.png)
+![Pokemon Explorer PokemonCard Detail Screenshot](./public/Screenshot_3.png)
+
+---
+
+## 🧑‍💻 Getting Started
+
+### 📦 Clone & Install
 
 ```bash
+git clone https://github.com/YourUsername/pokemon-explorer.git
+cd pokemon-explorer
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔗 Live Demo
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 👨‍🎓 Author
+Made with 💙 by Aryan Shubbu
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
