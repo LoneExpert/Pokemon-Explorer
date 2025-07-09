@@ -19,7 +19,6 @@ Welcome to **Pokémon Explorer** – a sleek, responsive web app built with **Ne
 - **Framework:** Next.js (App Router)
 - **Styling:** Tailwind CSS
 - **API:** [PokeAPI](https://pokeapi.co)
-- **Hosting:** GitHub Pages
 
 ---
 
@@ -29,7 +28,7 @@ Welcome to **Pokémon Explorer** – a sleek, responsive web app built with **Ne
 │   └── Screenshot_1.png         // Screenshot for README
 │   └── Screenshot_2.png         // Screenshot for README
 │   └── Screenshot_3.png         // Screenshot for README
-│   └── pokemon.png              // App icon
+│   └── pokemon.ico              // App icon
 src/
 ├── app/
 │   ├── page.jsx               // Homepage with search + Pokémon list
@@ -58,12 +57,6 @@ cd pokemon-explorer
 npm install
 npm run dev
 ```
-
-## 🔗 Live Demo
-
-
-
----
 
 ## 👨‍🎓 Author
 Made with 💙 by Aryan Shubbu

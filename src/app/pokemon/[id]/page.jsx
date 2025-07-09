@@ -1,23 +1,12 @@
+
 import Link from "next/link";
 
-// 1. Generate static params for export
-export async function generateStaticParams() {
-  const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=50");
-  const data = await res.json();
-
-  return data.results.map((pokemon) => ({
-    id: pokemon.name,
-  }));
-}
-
-// 2. Fetch Pokémon data
 async function getPokemonData(id) {
   const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
   if (!res.ok) throw new Error("Pokemon not found");
   return res.json();
 }
 
-// 3. Page Component
 const PokemonDetailPage = async ({ params }) => {
   const data = await getPokemonData(params.id);
 
