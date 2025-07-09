@@ -1,7 +1,6 @@
 {
   "name": "pokemon-explorer",
   "homepage": "https://LoneExpert.github.io/Pokemon-Explorer",
-
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "export": "next export",
     "predeploy": "npm run build && npm run export",
     "deploy": "gh-pages -d out"
   },
